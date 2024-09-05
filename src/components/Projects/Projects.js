@@ -78,6 +78,16 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={suicide}
+              isBlog={false}
+              title="FoundryFundME"
+              description="A basic project that is coded in solidity which contains contracts that allow you to crowd fund few projects that are listed on the contract "
+              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={emotion}
               isBlog={false}
               title="Face Recognition and Emotion Detection"
