@@ -8,6 +8,7 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import foundry from "../../Assets/Projects/foundry.png";
 
 function Projects() {
   return (
@@ -78,7 +79,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={foundry}
               isBlog={false}
               title="FoundryFundME"
               description="A basic project that is coded in solidity which contains contracts that allow you to crowd fund few projects that are listed on the contract "
