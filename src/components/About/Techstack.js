@@ -6,10 +6,22 @@ import {
   DiNodejs,
   DiMongodb,
   DiGit,
+  DiHtml5,
+  DiCss3,
+  DiJsBadge,
+
 } from "react-icons/di";
 import {
-  SiSolidity
+  SiSolidity,
+  SiMicrosoftexcel,
+  SiMicrosoftpowerpoint,
+
 } from "react-icons/si";
+import { 
+  PiMicrosoftWordLogoBold,
+  PiFileSql,
+  PiTrademarkRegisteredBold,
+} from "react-icons/pi";
 
 function Techstack() {
   return (

@@ -11,7 +11,7 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Anish Chandra </span>
             from <span className="purple"> Mumbai, India.</span>
             <br />
-            I am currently learning.
+            I am currently learning new skills.
             <br />
             I have completed BCom in Business Management at R.A. Podar College of Commerce
             Economics.
@@ -32,7 +32,11 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "Persistence is Key!
+            <i>
+                <b className="purple">BABY </b> 
+            </i>
+            "{" "}
           </p>
           <footer className="blockquote-footer">Anish</footer>
         </blockquote>

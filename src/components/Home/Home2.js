@@ -22,11 +22,6 @@ function Home2() {
               I fell in love with programming and Solving Problems. I have at least learnt
               something, I think… 🤷‍♂️
               <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> Data Science, Javascript and Solidity. </b>
-              </i>
-              <br />
               <br />
               My field of Interest's are building new &nbsp;
               <i>
@@ -35,7 +30,7 @@ function Home2() {
               <br />
               <br />
               Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              with
               <i>
                 <b className="purple">
                   {" "}
