@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import pdf from "../../Assets/../Assets/resume.pdf";
@@ -11,18 +11,22 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
+  const [numPages, setNumPages] = useState(null);
 
   useEffect(() => {
     setWidth(window.innerWidth);
   }, []);
+
+  const handleOnLoadSuccess = ({ numPages }) => {
+    setNumPages(numPages);
+  };
 
   return (
     <div>
       <Container fluid className="resume-section">
         <Particle />
         
-        {/* Download button */}
-        <Row style={{ justifyContent: "center", position: "relative", marginBottom: "20px" }}>
+        <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
             href={pdf}
@@ -34,22 +38,17 @@ function ResumeNew() {
           </Button>
         </Row>
 
-        {/* PDF pages */}
-        <Row className="resume">
-          <Col xs={12} md={6}>
-            <Document file={pdf} className="d-flex justify-content-center">
-              <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.8} />
-            </Document>
-          </Col>
-          <Col xs={12} md={6}>
-            <Document file={pdf} className="d-flex justify-content-center">
-              <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.8} />
-            </Document>
-          </Col>
-        </Row>
+        <Document file={pdf} onLoadSuccess={handleOnLoadSuccess}>
+          {Array.from(new Array(numPages), (_, index) => (
+            <Page
+              key={`page_${index + 1}`}
+              pageNumber={index + 1}
+              scale={width > 786 ? 1.7 : 0.6}
+            />
+          ))}
+        </Document>
 
-        {/* Another download button at the bottom */}
-        <Row style={{ justifyContent: "center", position: "relative", marginTop: "20px" }}>
+        <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
             href={pdf}
