@@ -44,6 +44,30 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiHtml5 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiCss3 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiJsBadge />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMicrosoftexcel />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMicrosoftpowerpoint />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <PiFileSql />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <PiMicrosoftWordLogoBold />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <PiTrademarkRegisteredBold />
+      </Col>
     </Row>
   );
 }
