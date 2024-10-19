@@ -32,10 +32,7 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Persistence is Key!
-            <i>
-                <b className="purple">BABY </b> 
-            </i>
+            "Persistence is Key! BABY
             "{" "}
           </p>
           <footer className="blockquote-footer">Anish</footer>
